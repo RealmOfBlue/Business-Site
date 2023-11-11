@@ -18,13 +18,18 @@ nav a {
     font-family: 'Michroma', sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 250%;
+    font-size: 200%;
     letter-spacing: 2px;
     
 }
 
 nav a:hover {
     color: #840181;
+}
+
+.active {
+    text-decoration: line-through;
+
 }
 
 .welcome-bar img {
@@ -35,14 +40,109 @@ nav a:hover {
     background-color: white;
 }
 
-.homepage-content img {
+.homepage-content-mobile img {
     width: 100%;
 }
 
-.homepage-content {
+.homepage-content-mobile {
     background-color: #957995;
+}
+
+
+.homepage-content-mobile {
+    display: none;
+}
+
+.homepage-content-tablet {
+    display: none;
+}
+
+.homepage-content-desk {
+    display: none;
 }
 
 .footer img {
     width: 100%;
+}
+
+
+
+/* DESKTOP  */
+
+@media (min-width: 1000px) {
+    nav a {
+        font-size: 250%;
+    }
+
+    .homepage-content-desk img {
+        width: 100%;
+    }
+    
+    .homepage-content-desk {
+        background-color: #957995;
+        display: block;
+
+    }
+    .homepage-content-mobile {
+        display: none;
+    }
+    
+    .homepage-content-tablet {
+        display: none;
+    }
+    
+
+}
+
+/* TABLET */
+    
+@media (max-width: 1000px) {
+
+    nav a {
+        font-size: 150%;
+    }
+
+    .homepage-content-tablet img {
+        width: 100%;
+    }
+    
+    .homepage-content-tablet {
+        background-color: #957995;
+        display: block;
+    }
+    .homepage-content-mobile {
+        display: none;
+    }
+    
+    .homepage-content-desk {
+        display: none;
+    }
+
+}
+    
+/* MOBILE */
+    
+@media (max-width: 800px) {
+
+    nav a {
+        font-size: 100%;
+    }
+
+    .homepage-content-mobile img {
+        width: 100%;
+    }
+    
+    .homepage-content-mobile {
+        background-color: #957995;
+        display: block;
+    }
+
+    .homepage-content-tablet {
+        display: none;
+    }
+    
+    .homepage-content-desk {
+        display: none;
+    }
+
 }
