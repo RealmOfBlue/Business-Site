@@ -90,6 +90,10 @@ nav a:hover {
     .homepage-content-tablet {
         display: none;
     }
+
+    .shop-content-mobile {
+        display: none;
+    }
     
 
 }
@@ -118,6 +122,10 @@ nav a:hover {
         display: none;
     }
 
+    .shop-content-mobile {
+        display: none;
+    }
+
 }
     
 /* MOBILE */
@@ -135,6 +143,16 @@ nav a:hover {
     .homepage-content-mobile {
         background-color: #957995;
         display: block;
+    }
+
+    .shop-content-mobile {
+        background-color: #957995;
+        display: block;
+    }
+
+    .shop-content-mobile img {
+        width: 100%;
+        margin-left: 9%;
     }
 
     .homepage-content-tablet {
